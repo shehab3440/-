@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রথম আলু - Daily News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-color: #d32f2f; /* Dark Red, typically used in news */
+            --secondary-color: #f4f4f4;
+            --text-dark: #333;
+            --text-light: #666;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?newspaper,reading');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+            background: #fff;
+            padding: 0 15px;
+            border-radius: 5px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            font-weight: 600;
+        }
+
+        .cta-button:hover {
+            background-color: #b71c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* News Section */
+        .news-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 10px auto;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* News Card */
+        .news-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .news-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .news-excerpt {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <p> হাসলে ৫০০ টাকা জরিমানা</p>
+        <h1><span>প্রথম আলু</span></h1> <br>
+        <a href="#latest-news" class="cta-button"> ভিক্ষুকেরো সময়ের দাম আছে কিন্তু 🫵↓</a>
+                <a href="#latest-news" class="cta-button">মরার জন্য নিচে যাও↓</a>
+    </header>
+
+    <section id="latest-news" class="news-section">
+        <h2 class="section-title">কিছুক্ষণ আগে ঘটে যাওয়া সাপ্রতিক খবর</h2>
+        
+        <div class="news-grid">
+            
+            <article class="news-card">
+                <img src= লগে আছি  কম" alt="পুকির দাতুয়া ছবি" class="https://photo">
+                <div class="news-content">
+                    <span class="news-tag">মেয়েদের খবর</span>
+                    <h3 class="news-title">মানুষ কিভাবে ক্রিঞ্জ হয়</h3>
+                    <p class="news-excerpt">ক্লাব মেম্বার কে বিনা নোটিশ এ বের করে দেওয়ায় মাহি ভাইয়া তাকে কিছু জিজ্ঞাসা করেছিলেন তবে তিনি তার উত্তর নাহ দিয়েই গ্রুপ থেকে লিভ নিয়ে নে, তিনি এর দ্বাবারা কি বুঝাতে চাচ্ছিলেন এটা কারোর বোধগম্য	নয়।
+এখনো যানা যায়নি আসলে ঠিক কি কারণে নিজেকে পুকি দাবি করা ছেলেটা পদত্যাগ করলো??</p>
+                    <a href="#" class="read-more"> পড়ার মতো আর কিছুই নাই? &rarr;</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&auto=format&fit=crop" alt="Cricket" class="news-image">
+                <div class="news-content">
+                    <span class="news-tag">অসময়ের অখবর</span>
+                    <h3 class="news-title"> মশাও পাখি মিথুন ও ক্রিকেটার </h3>
+                    <p class="news-excerpt">বাংলাদেশ ক্রিকেট সম্পর্কে কিছু বলতে চাই নাহ কারণ এমনিতেই কষ্টে আছি </p>
+                    <a href="#" class="read-more">Read Full Story &rarr;</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&auto=format&fit=crop" alt="Technology" class="news-image">
+                <div class="news-content">
+                    <span class="news-tag">Technology</span>
+                    <h3 class="news-title"> hey guys ভবিষ্যতে তোমার চাকরি আমিই খাবো</h3>
+                    <p class="news-excerpt"> শোন তাহলে কিভাবে এই ওয়েব পেজ টাহ যে বানাইছে সে নিজেও আমার থেকে স্ট্রাকচার কপি করে নিছে তাই সবকিছুতেই মোটামুটি আমাকে লাগে এমনকি তোমাদের ডিবেটারদের প্রধান হাতিয়ার এই আমি 😭</p>
+                    <a href="#" class="read-more"> যা পড়ছিস এইটাই অনেক  &rarr;</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; এইসব ফালতু জিনিস নাহ পড়ে কামব্যাক দেও ভাই </p>
+    </footer>
+
+</body>
+</html>
